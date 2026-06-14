@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoBite AI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>EcoBite AI</h1>
+        <p>Reduce Food Waste with Artificial Intelligence</p>
+    </header>
+
+    <div class="glass-card input-card">
+
+        <h2>Enter Available Ingredients</h2>
+
+        <textarea
+            id="ingredients"
+            placeholder="Example: Milk, Bread, Tomatoes, Eggs">
+        </textarea>
+
+        <button onclick="analyzeFood()">
+            Analyze Ingredients
+        </button>
+
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="results" class="results hidden">
+
+        <div class="glass-card">
+            <h3>Recipe Suggestions</h3>
+            <div id="recipes"></div>
+        </div>
+
+        <div class="glass-card">
+            <h3>Storage Tips</h3>
+            <div id="storage"></div>
+        </div>
+
+        <div class="glass-card">
+            <h3>Waste Risk Analysis</h3>
+            <div id="risk"></div>
+        </div>
+
+        <div class="glass-card">
+            <h3>Sustainability Advice</h3>
+            <div id="sustainability"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
